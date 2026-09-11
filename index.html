@@ -19,24 +19,24 @@ tailwind.config = {
         mono: ['"JetBrains Mono"', 'Consolas', 'ui-monospace', 'monospace']
       },
       colors: {
-        navy: '#2D6E9F',
-        sky: '#79A6C7',
-        mint: '#C4E0DC',
-        cream: '#FAF6ED',
-        ink: '#1C2B33',
-        muted: '#5C6B75',
-        line: '#D7E0E6',
-        gold: '#C4922F',
+        navy: '#0E86C4',
+        sky: '#3A9FD4',
+        mint: '#A8D4EB',
+        cream: '#F5F6F7',
+        ink: '#1A2B35',
+        muted: '#5A6B75',
+        line: '#D5DEE5',
+        gold: '#F0B44F',
         alert: '#C95A46',
-        navydeep: '#1B4A70',
-        skysoft: '#E8F1F7',
-        mintsoft: '#EEF7F5',
-        goldsoft: '#FBF3E0',
+        navydeep: '#0A5480',
+        skysoft: '#E6F3FB',
+        mintsoft: '#EDF6FC',
+        goldsoft: '#FBF0D4',
         alertsoft: '#FCEEEA'
       },
       boxShadow: {
-        card: '0 4px 18px rgba(28,43,51,0.06)',
-        lift: '0 10px 30px rgba(45,110,159,0.12)'
+        card: '0 4px 18px rgba(26,43,53,0.06)',
+        lift: '0 10px 30px rgba(14,134,196,0.14)'
       },
       borderRadius: {
         card: '16px'
@@ -54,20 +54,20 @@ tailwind.config = {
   .nav-link.active {
     background: rgba(255,255,255,.14);
     color: #fff;
-    box-shadow: inset 3px 0 0 #C4E0DC;
+    box-shadow: inset 3px 0 0 #A8D4EB;
   }
   table.doc th { white-space: nowrap; }
-  table.doc tbody tr:hover td { background: #E8F1F7; }
+  table.doc tbody tr:hover td { background: #E6F3FB; }
   @media print {
     .no-print { display: none !important; }
     .main-offset { margin-left: 0 !important; }
     .print-block { break-inside: avoid; }
     body { background: #fff !important; }
-    .hero-print { background: #fff !important; color: #1C2B33 !important; }
-    .hero-print h1, .hero-print .eyebrow { color: #1C2B33 !important; }
-    .hero-print .meta-card { border-color: #D7E0E6 !important; background: #fff !important; }
+    .hero-print { background: #fff !important; color: #1A2B35 !important; }
+    .hero-print h1, .hero-print .eyebrow { color: #1A2B35 !important; }
+    .hero-print .meta-card { border-color: #D5DEE5 !important; background: #fff !important; }
     .hero-print .meta-card small, .hero-print .meta-card strong,
-    .hero-print .doc-label, .hero-print .hero-desc { color: #5C6B75 !important; }
+    .hero-print .doc-label, .hero-print .hero-desc { color: #5A6B75 !important; }
     section { page-break-inside: auto; }
   }
 </style>
@@ -87,9 +87,6 @@ tailwind.config = {
     <div class="text-[11px] uppercase tracking-widest text-mint/80 font-semibold">RBPMP & Silabus</div>
     <div class="text-sm font-bold truncate">Kehumasan Berbantuan AI</div>
   </div>
-  <button id="printBtnMobile" type="button" class="ml-auto w-10 h-10 rounded-xl bg-white/10 hover:bg-white/20 flex items-center justify-center" title="Cetak / PDF">
-    <i class="fa-solid fa-print"></i>
-  </button>
 </div>
 
 <!-- Sidebar overlay -->
@@ -129,13 +126,8 @@ tailwind.config = {
     <a href="#evaluasi" class="nav-link block px-3 py-2 rounded-lg text-white/85 hover:bg-white/10 hover:text-white transition"><i class="fa-solid fa-chart-line w-5 text-mint"></i>Evaluasi Kirkpatrick</a>
     <a href="#tindaklanjut" class="nav-link block px-3 py-2 rounded-lg text-white/85 hover:bg-white/10 hover:text-white transition"><i class="fa-solid fa-arrow-right-long w-5 text-mint"></i>Tindak Lanjut</a>
     <a href="#perlengkapan" class="nav-link block px-3 py-2 rounded-lg text-white/85 hover:bg-white/10 hover:text-white transition"><i class="fa-solid fa-toolbox w-5 text-mint"></i>Perlengkapan</a>
+    <a href="#unduhan" class="nav-link block px-3 py-2 rounded-lg text-white/85 hover:bg-white/10 hover:text-white transition"><i class="fa-solid fa-download w-5 text-mint"></i>Unduhan</a>
   </nav>
-
-  <div class="px-4 py-4 border-t border-white/10">
-    <button id="printBtn" type="button" class="w-full flex items-center justify-center gap-2 rounded-xl bg-white/10 hover:bg-white/20 text-white text-sm font-semibold py-2.5 transition">
-      <i class="fa-solid fa-print"></i> Cetak / PDF
-    </button>
-  </div>
 </aside>
 
 <!-- Main -->
@@ -143,7 +135,7 @@ tailwind.config = {
 
   <!-- Hero -->
   <header class="hero-print relative bg-gradient-to-br from-navydeep via-navy to-sky text-white">
-    <div class="absolute inset-0 opacity-20 pointer-events-none" style="background:radial-gradient(circle at 85% 10%, #C4E0DC 0%, transparent 35%)"></div>
+    <div class="absolute inset-0 opacity-25 pointer-events-none" style="background:radial-gradient(circle at 85% 10%, #F0B44F 0%, transparent 38%)"></div>
     <div class="relative max-w-6xl mx-auto px-5 sm:px-8 lg:px-12 pt-8 pb-12 sm:pt-10 sm:pb-14">
 
       <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5 pb-7 border-b border-white/15">
@@ -326,25 +318,25 @@ tailwind.config = {
       <p class="text-muted max-w-3xl mb-6 leading-relaxed">Tujuan pembelajaran dibuat dalam bentuk perilaku yang dapat dilihat dan dinilai.</p>
 
       <div class="grid grid-cols-2 xl:grid-cols-4 gap-3 mb-6">
-        <div class="rounded-card p-5 text-white bg-[#2D6E9F] min-h-[140px]">
+        <div class="rounded-card p-5 text-white bg-navydeep min-h-[140px]">
           <div class="text-3xl font-extrabold">A</div>
           <h3 class="font-bold mt-1">Audience</h3>
           <p class="text-sm text-white/85 mt-1">Siapa yang belajar?</p>
         </div>
-        <div class="rounded-card p-5 text-white bg-[#3B8F86] min-h-[140px]">
+        <div class="rounded-card p-5 text-white bg-navy min-h-[140px]">
           <div class="text-3xl font-extrabold">B</div>
           <h3 class="font-bold mt-1">Behavior</h3>
           <p class="text-sm text-white/85 mt-1">Apa yang dapat dilakukan?</p>
         </div>
-        <div class="rounded-card p-5 text-white bg-[#C4922F] min-h-[140px]">
+        <div class="rounded-card p-5 text-white bg-sky min-h-[140px]">
           <div class="text-3xl font-extrabold">C</div>
           <h3 class="font-bold mt-1">Condition</h3>
           <p class="text-sm text-white/85 mt-1">Dengan kondisi atau bahan apa?</p>
         </div>
-        <div class="rounded-card p-5 text-white bg-[#C95A46] min-h-[140px]">
+        <div class="rounded-card p-5 text-navydeep bg-gold min-h-[140px]">
           <div class="text-3xl font-extrabold">D</div>
           <h3 class="font-bold mt-1">Degree</h3>
-          <p class="text-sm text-white/85 mt-1">Seberapa baik harus dilakukan?</p>
+          <p class="text-sm text-navydeep/85 mt-1">Seberapa baik harus dilakukan?</p>
         </div>
       </div>
 
@@ -406,9 +398,9 @@ tailwind.config = {
                 <strong class="text-ink">A:</strong> Peserta pelatihan.<br><br>
                 <strong class="text-ink">B:</strong> Membuat outline dan draf berita, siaran pers, atau FAQ dengan bantuan AI.<br><br>
                 <strong class="text-ink">C:</strong> Menggunakan prompt PTCFC dan sumber yang tersedia.<br><br>
-                <strong class="text-ink">D:</strong> Struktur sesuai jenis tulisan dan tidak menambahkan fakta yang tidak terdapat dalam sumber.
+                <strong class="text-ink">D:</strong> Mencapai tingkat 3 pada rubrik struktur tulisan (struktur sesuai jenis tulisan; maksimal 1–2 perbaikan ringan; nol fakta karangan material).
               </td>
-              <td class="px-4 py-4 align-top font-semibold text-navy">Minimal tingkat 3</td>
+              <td class="px-4 py-4 align-top font-semibold text-navy">Tingkat ≥ 3</td>
               <td class="px-4 py-4 text-muted align-top">Draf tulisan</td>
             </tr>
             <tr>
@@ -428,9 +420,9 @@ tailwind.config = {
                 <strong class="text-ink">A:</strong> Peserta pelatihan.<br><br>
                 <strong class="text-ink">B:</strong> Mengubah satu pesan menjadi beberapa bentuk konten.<br><br>
                 <strong class="text-ink">C:</strong> Berdasarkan karakteristik kanal dan gaya komunikasi lembaga.<br><br>
-                <strong class="text-ink">D:</strong> Pesan utama tetap sama pada seluruh versi.
+                <strong class="text-ink">D:</strong> Pada minimal 3 versi kanal: pesan utama identik, fakta sama, hanya bentuk/tone yang menyesuaikan kanal (minimal 2 dari 3 kriteria lolos).
               </td>
-              <td class="px-4 py-4 align-top font-semibold text-navy">Pesan tetap konsisten</td>
+              <td class="px-4 py-4 align-top font-semibold text-navy">Pesan konsisten di 3 kanal</td>
               <td class="px-4 py-4 text-muted align-top">Paket konten lintas kanal</td>
             </tr>
             <tr>
@@ -527,7 +519,7 @@ tailwind.config = {
         </div>
       </div>
 
-      <div class="rounded-2xl border-l-4 border-[#3B8F86] bg-mintsoft p-5 mb-6 print-block">
+      <div class="rounded-2xl border-l-4 border-[#0E86C4] bg-mintsoft p-5 mb-6 print-block">
         <div class="font-bold text-navydeep mb-1"><i class="fa-solid fa-diagram-project mr-2"></i>Alur kerja</div>
         <p class="text-muted text-sm sm:text-base">Tentukan tugas → Buat prompt → Gunakan AI → Periksa hasil → Perbaiki → Periksa fakta → Minta persetujuan → Publikasikan</p>
       </div>
@@ -615,10 +607,12 @@ Setelah membuat hasil:
             <tr><td class="px-4 py-3.5 font-bold text-navy">2</td><td class="px-4 py-3.5 font-semibold">Membuat Outline</td><td class="px-4 py-3.5 text-muted">TP 2–4</td><td class="px-4 py-3.5 text-muted">Struktur berita, judul, lead, isi, siaran pers, FAQ.</td><td class="px-4 py-3.5 text-muted">Demonstrasi, latihan, pemeriksaan teman.</td><td class="px-4 py-3.5"><span class="px-2 py-0.5 rounded-full bg-skysoft text-navy text-[11px] font-bold">Hari 1</span></td><td class="px-4 py-3.5 text-muted">Outline</td></tr>
             <tr><td class="px-4 py-3.5 font-bold text-navy">3</td><td class="px-4 py-3.5 font-semibold">Membuat dan Memperbaiki Tulisan</td><td class="px-4 py-3.5 text-muted">TP 4–5</td><td class="px-4 py-3.5 text-muted">Berita, siaran pers, FAQ, gaya bahasa, pemeriksaan fakta.</td><td class="px-4 py-3.5 text-muted">Praktik AI, penyuntingan, diskusi.</td><td class="px-4 py-3.5"><span class="px-2 py-0.5 rounded-full bg-skysoft text-navy text-[11px] font-bold">Hari 1</span></td><td class="px-4 py-3.5 text-muted">Draf tulisan</td></tr>
             <tr><td class="px-4 py-3.5 font-bold text-navy">4</td><td class="px-4 py-3.5 font-semibold">Mengubah Konten ke Beberapa Kanal</td><td class="px-4 py-3.5 text-muted">TP 5–6</td><td class="px-4 py-3.5 text-muted">Website, Instagram, WhatsApp/email, video, CTA.</td><td class="px-4 py-3.5 text-muted">Praktik produksi, simulasi, pemeriksaan.</td><td class="px-4 py-3.5"><span class="px-2 py-0.5 rounded-full bg-skysoft text-navy text-[11px] font-bold">Hari 1</span></td><td class="px-4 py-3.5 text-muted">Paket konten</td></tr>
-            <tr><td class="px-4 py-3.5 font-bold text-navy">5</td><td class="px-4 py-3.5 font-semibold">Pilar Konten dan Kalender Konten</td><td class="px-4 py-3.5 text-muted">TP 7</td><td class="px-4 py-3.5 text-muted">Tujuan akun, audiens, pilar konten, kalender.</td><td class="px-4 py-3.5 text-muted">Kerja kelompok, pemetaan ide, konsultasi.</td><td class="px-4 py-3.5"><span class="px-2 py-0.5 rounded-full bg-mintsoft text-[#2F6F68] text-[11px] font-bold">Hari 2</span></td><td class="px-4 py-3.5 text-muted">Kalender 14 hari</td></tr>
-            <tr><td class="px-4 py-3.5 font-bold text-navy">6</td><td class="px-4 py-3.5 font-semibold">Hook, Caption, CTA, dan Visual</td><td class="px-4 py-3.5 text-muted">TP 8</td><td class="px-4 py-3.5 text-muted">Hook, caption, CTA, carousel, reels, story, arahan visual.</td><td class="px-4 py-3.5 text-muted">Demonstrasi, praktik cepat, kritik hasil.</td><td class="px-4 py-3.5"><span class="px-2 py-0.5 rounded-full bg-mintsoft text-[#2F6F68] text-[11px] font-bold">Hari 2</span></td><td class="px-4 py-3.5 text-muted">Paket konten sosial</td></tr>
-            <tr><td class="px-4 py-3.5 font-bold text-navy">7</td><td class="px-4 py-3.5 font-semibold">Komentar dan Pemeriksaan Kinerja</td><td class="px-4 py-3.5 text-muted">TP 9–10</td><td class="px-4 py-3.5 text-muted">Kategori komentar, respons, penerusan masalah, data kinerja.</td><td class="px-4 py-3.5 text-muted">Simulasi, bermain peran, latihan data.</td><td class="px-4 py-3.5"><span class="px-2 py-0.5 rounded-full bg-mintsoft text-[#2F6F68] text-[11px] font-bold">Hari 2</span></td><td class="px-4 py-3.5 text-muted">Matriks komentar + rekomendasi</td></tr>
-            <tr><td class="px-4 py-3.5 font-bold text-navy">8</td><td class="px-4 py-3.5 font-semibold">Proyek Akhir</td><td class="px-4 py-3.5 text-muted">TP 11</td><td class="px-4 py-3.5 text-muted">Integrasi prompt, produksi, pemeriksaan, dan perbaikan.</td><td class="px-4 py-3.5 text-muted">Workshop, konsultasi, presentasi.</td><td class="px-4 py-3.5"><span class="px-2 py-0.5 rounded-full bg-mintsoft text-[#2F6F68] text-[11px] font-bold">Hari 2</span></td><td class="px-4 py-3.5 text-muted">Paket komunikasi</td></tr>
+            <tr><td class="px-4 py-3.5 font-bold text-navy">5</td><td class="px-4 py-3.5 font-semibold">Pilar Konten dan Kalender Konten</td><td class="px-4 py-3.5 text-muted">TP 7</td><td class="px-4 py-3.5 text-muted">Tujuan akun, audiens, pilar konten, kalender.</td><td class="px-4 py-3.5 text-muted">Kerja kelompok, pemetaan ide, konsultasi.</td><td class="px-4 py-3.5"><span class="px-2 py-0.5 rounded-full bg-mintsoft text-navydeep text-[11px] font-bold">Hari 2</span></td><td class="px-4 py-3.5 text-muted">Kalender 14 hari</td></tr>
+            <tr><td class="px-4 py-3.5 font-bold text-navy">6</td><td class="px-4 py-3.5 font-semibold">Hook, Caption, CTA, dan Visual</td><td class="px-4 py-3.5 text-muted">TP 8</td><td class="px-4 py-3.5 text-muted">Hook, caption, CTA, carousel, reels, story, arahan visual.</td><td class="px-4 py-3.5 text-muted">Demonstrasi, praktik cepat, kritik hasil.</td><td class="px-4 py-3.5"><span class="px-2 py-0.5 rounded-full bg-mintsoft text-navydeep text-[11px] font-bold">Hari 2</span> <span class="text-[11px] text-muted">10.00–10.45</span></td><td class="px-4 py-3.5 text-muted">Paket konten sosial</td></tr>
+            <tr><td class="px-4 py-3.5 font-bold text-navy">6b</td><td class="px-4 py-3.5 font-semibold">Visual &amp; Lintas Kanal</td><td class="px-4 py-3.5 text-muted">TP 6, 8</td><td class="px-4 py-3.5 text-muted">Arahan visual; satu pesan ke 3 kanal; cek konsistensi.</td><td class="px-4 py-3.5 text-muted">Praktik produksi, peer check.</td><td class="px-4 py-3.5"><span class="px-2 py-0.5 rounded-full bg-mintsoft text-navydeep text-[11px] font-bold">Hari 2</span> <span class="text-[11px] text-muted">11.00–12.00</span></td><td class="px-4 py-3.5 text-muted">Paket lintas kanal</td></tr>
+            <tr><td class="px-4 py-3.5 font-bold text-navy">7</td><td class="px-4 py-3.5 font-semibold">Komentar dan Respons</td><td class="px-4 py-3.5 text-muted">TP 9</td><td class="px-4 py-3.5 text-muted">Kategori komentar, respons, penerusan masalah.</td><td class="px-4 py-3.5 text-muted">Simulasi, bermain peran.</td><td class="px-4 py-3.5"><span class="px-2 py-0.5 rounded-full bg-mintsoft text-navydeep text-[11px] font-bold">Hari 2</span> <span class="text-[11px] text-muted">13.00–13.45</span></td><td class="px-4 py-3.5 text-muted">Matriks komentar</td></tr>
+            <tr><td class="px-4 py-3.5 font-bold text-navy">7b</td><td class="px-4 py-3.5 font-semibold">Data Kinerja Konten</td><td class="px-4 py-3.5 text-muted">TP 10</td><td class="px-4 py-3.5 text-muted">Membaca data kinerja; menyusun ≥2 rekomendasi berbasis angka.</td><td class="px-4 py-3.5 text-muted">Latihan data, gallery walk.</td><td class="px-4 py-3.5"><span class="px-2 py-0.5 rounded-full bg-mintsoft text-navydeep text-[11px] font-bold">Hari 2</span> <span class="text-[11px] text-muted">13.45–14.15</span></td><td class="px-4 py-3.5 text-muted">Rekomendasi data</td></tr>
+            <tr><td class="px-4 py-3.5 font-bold text-navy">8</td><td class="px-4 py-3.5 font-semibold">Klinik Proyek Akhir (draft) + Penutup</td><td class="px-4 py-3.5 text-muted">TP 11</td><td class="px-4 py-3.5 text-muted">Draft komponen prioritas; post-test; rencana penerapan. Final H+7.</td><td class="px-4 py-3.5 text-muted">Klinik konsultasi, tes, refleksi.</td><td class="px-4 py-3.5"><span class="px-2 py-0.5 rounded-full bg-mintsoft text-navydeep text-[11px] font-bold">Hari 2</span> <span class="text-[11px] text-muted">14.15–15.00</span></td><td class="px-4 py-3.5 text-muted">Draft proyek + nilai post-test</td></tr>
           </tbody>
         </table>
       </div>
@@ -636,7 +630,7 @@ Setelah membuat hasil:
           <div class="text-xs text-muted">60 menit</div>
           <div>
             <div class="font-bold text-navy text-sm">Sesi 1 — Menentukan Tujuan, Audiens, dan Angle</div>
-            <div class="text-sm text-muted mt-1 leading-relaxed">Memahami pekerjaan Humas, menentukan tujuan komunikasi, mengenali audiens, memilih pesan, dan menentukan angle.</div>
+            <div class="text-sm text-muted mt-1 leading-relaxed">Mengidentifikasi pekerjaan Humas, menentukan tujuan komunikasi, mengenali audiens, memilih pesan, dan menentukan angle.</div>
           </div>
         </div>
         <div class="print-block grid grid-cols-1 md:grid-cols-[140px_80px_1fr] gap-3 items-start bg-white border border-line rounded-card shadow-card p-4">
@@ -650,7 +644,7 @@ Setelah membuat hasil:
         <div class="print-block grid grid-cols-1 md:grid-cols-[140px_80px_1fr] gap-3 items-start bg-goldsoft border border-gold/40 rounded-card p-4">
           <div class="font-bold text-navydeep text-sm"><i class="fa-regular fa-clock mr-1 text-muted"></i>10.45–11.00</div>
           <div class="text-xs text-muted">15 menit</div>
-          <div class="font-bold text-[#8A6820] text-sm"><i class="fa-solid fa-mug-hot mr-1"></i>Coffee Break</div>
+          <div class="font-bold text-[#9A7212] text-sm"><i class="fa-solid fa-mug-hot mr-1"></i>Coffee Break</div>
         </div>
         <div class="print-block grid grid-cols-1 md:grid-cols-[140px_80px_1fr] gap-3 items-start bg-white border border-line rounded-card shadow-card p-4">
           <div class="font-bold text-navydeep text-sm"><i class="fa-regular fa-clock mr-1 text-muted"></i>11.00–12.15</div>
@@ -664,7 +658,7 @@ Setelah membuat hasil:
           <div class="font-bold text-navydeep text-sm"><i class="fa-regular fa-clock mr-1 text-muted"></i>12.15–13.00</div>
           <div class="text-xs text-muted">45 menit</div>
           <div>
-            <div class="font-bold text-[#2F6F68] text-sm">ISHOMA</div>
+            <div class="font-bold text-navydeep text-sm">ISHOMA</div>
             <div class="text-sm text-muted mt-1">Istirahat, sholat, dan makan siang.</div>
           </div>
         </div>
@@ -679,7 +673,7 @@ Setelah membuat hasil:
         <div class="print-block grid grid-cols-1 md:grid-cols-[140px_80px_1fr] gap-3 items-start bg-goldsoft border border-gold/40 rounded-card p-4">
           <div class="font-bold text-navydeep text-sm"><i class="fa-regular fa-clock mr-1 text-muted"></i>14.30–14.45</div>
           <div class="text-xs text-muted">15 menit</div>
-          <div class="font-bold text-[#8A6820] text-sm"><i class="fa-solid fa-mug-hot mr-1"></i>Coffee Break</div>
+          <div class="font-bold text-[#9A7212] text-sm"><i class="fa-solid fa-mug-hot mr-1"></i>Coffee Break</div>
         </div>
         <div class="print-block grid grid-cols-1 md:grid-cols-[140px_80px_1fr] gap-3 items-start bg-white border border-line rounded-card shadow-card p-4">
           <div class="font-bold text-navydeep text-sm"><i class="fa-regular fa-clock mr-1 text-muted"></i>14.45–15.00</div>
@@ -696,15 +690,19 @@ Setelah membuat hasil:
     <section id="hari2" class="scroll-mt-24 mb-16">
       <div class="text-navy text-[11px] font-extrabold uppercase tracking-[1.5px] mb-2">08 · Hari Kedua</div>
       <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-navydeep mb-3">Hari 2 — Pengelolaan Media Sosial</h2>
-      <p class="text-muted max-w-3xl mb-6 leading-relaxed">Fokus hari kedua adalah perencanaan konten, pembuatan konten, pengelolaan komentar, membaca data, dan menyusun proyek akhir.</p>
+      <p class="text-muted max-w-3xl mb-6 leading-relaxed">Fokus hari kedua adalah perencanaan konten, pembuatan konten, pengelolaan komentar, membaca data, dan menyusun draft proyek akhir (final H+7). Sesi sore dipisah agar TP 9–11 mendapat waktu terlindungi.</p>
+
+      <div class="rounded-2xl border-l-4 border-[#0E86C4] bg-mintsoft p-4 mb-5 print-block">
+        <p class="text-sm text-muted leading-relaxed"><strong class="text-ink">Pembuka 09.00–09.10:</strong> retrieval opener Hari 1 — tulis ulang 1 prompt PTCFC + temukan kesalahan fakta yang ditanam.</p>
+      </div>
 
       <div class="space-y-3">
         <div class="print-block grid grid-cols-1 md:grid-cols-[140px_80px_1fr] gap-3 items-start bg-white border border-line rounded-card shadow-card p-4">
-          <div class="font-bold text-navydeep text-sm"><i class="fa-regular fa-clock mr-1 text-muted"></i>09.00–10.00</div>
-          <div class="text-xs text-muted">60 menit</div>
+          <div class="font-bold text-navydeep text-sm"><i class="fa-regular fa-clock mr-1 text-muted"></i>09.10–10.00</div>
+          <div class="text-xs text-muted">50 menit</div>
           <div>
             <div class="font-bold text-navy text-sm">Sesi 5 — Pilar Konten dan Kalender Konten</div>
-            <div class="text-sm text-muted mt-1 leading-relaxed">Menentukan tujuan akun, mengenali audiens, membuat pilar konten, dan menyusun kalender selama 14 hari.</div>
+            <div class="text-sm text-muted mt-1 leading-relaxed">Menentukan tujuan akun, membuat 4–5 pilar konten, dan menyusun kalender 14 hari (TP 7).</div>
           </div>
         </div>
         <div class="print-block grid grid-cols-1 md:grid-cols-[140px_80px_1fr] gap-3 items-start bg-white border border-line rounded-card shadow-card p-4">
@@ -712,49 +710,60 @@ Setelah membuat hasil:
           <div class="text-xs text-muted">45 menit</div>
           <div>
             <div class="font-bold text-navy text-sm">Sesi 6A — Hook, Caption, dan CTA</div>
-            <div class="text-sm text-muted mt-1 leading-relaxed">Membuat beberapa pilihan pembuka, caption, dan ajakan bertindak sesuai tujuan konten.</div>
+            <div class="text-sm text-muted mt-1 leading-relaxed">Membuat 3 pilihan hook, caption, dan ajakan bertindak sesuai tujuan konten (TP 8).</div>
           </div>
         </div>
         <div class="print-block grid grid-cols-1 md:grid-cols-[140px_80px_1fr] gap-3 items-start bg-goldsoft border border-gold/40 rounded-card p-4">
           <div class="font-bold text-navydeep text-sm"><i class="fa-regular fa-clock mr-1 text-muted"></i>10.45–11.00</div>
           <div class="text-xs text-muted">15 menit</div>
-          <div class="font-bold text-[#8A6820] text-sm"><i class="fa-solid fa-mug-hot mr-1"></i>Coffee Break</div>
+          <div class="font-bold text-[#9A7212] text-sm"><i class="fa-solid fa-mug-hot mr-1"></i>Coffee Break</div>
         </div>
         <div class="print-block grid grid-cols-1 md:grid-cols-[140px_80px_1fr] gap-3 items-start bg-white border border-line rounded-card shadow-card p-4">
-          <div class="font-bold text-navydeep text-sm"><i class="fa-regular fa-clock mr-1 text-muted"></i>11.00–12.15</div>
-          <div class="text-xs text-muted">75 menit</div>
+          <div class="font-bold text-navydeep text-sm"><i class="fa-regular fa-clock mr-1 text-muted"></i>11.00–12.00</div>
+          <div class="text-xs text-muted">60 menit</div>
           <div>
             <div class="font-bold text-navy text-sm">Sesi 6B — Konsep Visual dan Konten Lintas Kanal</div>
-            <div class="text-sm text-muted mt-1 leading-relaxed">Membuat arahan visual, carousel, reels, story, dan mengubah satu konten untuk beberapa platform.</div>
+            <div class="text-sm text-muted mt-1 leading-relaxed">Membuat arahan visual dan mengadaptasi satu pesan utama ke minimal 3 kanal (TP 6, 8).</div>
           </div>
         </div>
         <div class="print-block grid grid-cols-1 md:grid-cols-[140px_80px_1fr] gap-3 items-start bg-mintsoft border border-mint rounded-card p-4">
-          <div class="font-bold text-navydeep text-sm"><i class="fa-regular fa-clock mr-1 text-muted"></i>12.15–13.00</div>
-          <div class="text-xs text-muted">45 menit</div>
+          <div class="font-bold text-navydeep text-sm"><i class="fa-regular fa-clock mr-1 text-muted"></i>12.00–13.00</div>
+          <div class="text-xs text-muted">60 menit</div>
           <div>
-            <div class="font-bold text-[#2F6F68] text-sm">ISHOMA</div>
+            <div class="font-bold text-navydeep text-sm">ISHOMA</div>
             <div class="text-sm text-muted mt-1">Istirahat, sholat, dan makan siang.</div>
           </div>
         </div>
         <div class="print-block grid grid-cols-1 md:grid-cols-[140px_80px_1fr] gap-3 items-start bg-white border border-line rounded-card shadow-card p-4">
-          <div class="font-bold text-navydeep text-sm"><i class="fa-regular fa-clock mr-1 text-muted"></i>13.00–14.30</div>
-          <div class="text-xs text-muted">90 menit</div>
+          <div class="font-bold text-navydeep text-sm"><i class="fa-regular fa-clock mr-1 text-muted"></i>13.00–13.45</div>
+          <div class="text-xs text-muted">45 menit</div>
           <div>
-            <div class="font-bold text-navy text-sm">Sesi 7 — Komentar, Data, dan Proyek Akhir</div>
-            <div class="text-sm text-muted mt-1 leading-relaxed">Mengelompokkan komentar, membuat respons, menentukan komentar yang perlu diteruskan, membaca data, dan menyelesaikan proyek akhir.</div>
+            <div class="font-bold text-navy text-sm">Sesi 7A — Komentar dan Respons</div>
+            <div class="text-sm text-muted mt-1 leading-relaxed">Mengelompokkan komentar, membuat respons, dan menentukan komentar yang perlu diteruskan (TP 9).</div>
           </div>
         </div>
-        <div class="print-block grid grid-cols-1 md:grid-cols-[140px_80px_1fr] gap-3 items-start bg-goldsoft border border-gold/40 rounded-card p-4">
-          <div class="font-bold text-navydeep text-sm"><i class="fa-regular fa-clock mr-1 text-muted"></i>14.30–14.45</div>
-          <div class="text-xs text-muted">15 menit</div>
-          <div class="font-bold text-[#8A6820] text-sm"><i class="fa-solid fa-mug-hot mr-1"></i>Coffee Break</div>
+        <div class="print-block grid grid-cols-1 md:grid-cols-[140px_80px_1fr] gap-3 items-start bg-white border border-line rounded-card shadow-card p-4">
+          <div class="font-bold text-navydeep text-sm"><i class="fa-regular fa-clock mr-1 text-muted"></i>13.45–14.15</div>
+          <div class="text-xs text-muted">30 menit</div>
+          <div>
+            <div class="font-bold text-navy text-sm">Sesi 7B — Data Kinerja Konten</div>
+            <div class="text-sm text-muted mt-1 leading-relaxed">Membaca data kinerja dan menyusun minimal 2 rekomendasi yang didukung angka (TP 10).</div>
+          </div>
+        </div>
+        <div class="print-block grid grid-cols-1 md:grid-cols-[140px_80px_1fr] gap-3 items-start bg-skysoft border border-sky/40 rounded-card shadow-card p-4">
+          <div class="font-bold text-navydeep text-sm"><i class="fa-regular fa-clock mr-1 text-muted"></i>14.15–14.45</div>
+          <div class="text-xs text-muted">30 menit</div>
+          <div>
+            <div class="font-bold text-navy text-sm">Sesi 8A — Klinik Proyek Akhir (draft)</div>
+            <div class="text-sm text-muted mt-1 leading-relaxed">Fokus draft 1 komponen prioritas + konsultasi fact-check. Artefak final jatuh tempo <strong class="text-ink">H+7</strong> (TP 11).</div>
+          </div>
         </div>
         <div class="print-block grid grid-cols-1 md:grid-cols-[140px_80px_1fr] gap-3 items-start bg-white border border-line rounded-card shadow-card p-4">
           <div class="font-bold text-navydeep text-sm"><i class="fa-regular fa-clock mr-1 text-muted"></i>14.45–15.00</div>
           <div class="text-xs text-muted">15 menit</div>
           <div>
-            <div class="font-bold text-navy text-sm">Sesi 8 — Post-Test dan Penutupan</div>
-            <div class="text-sm text-muted mt-1 leading-relaxed">Peserta mengerjakan post-test, melihat kembali hasil belajar, dan menentukan rencana penerapan di tempat kerja.</div>
+            <div class="font-bold text-navy text-sm">Sesi 8B — Post-Test dan Penutupan</div>
+            <div class="text-sm text-muted mt-1 leading-relaxed">Post-test, rencana penerapan 1 minggu ke depan, dan pengumuman booster D+3 / D+7 / D+21.</div>
           </div>
         </div>
       </div>
@@ -791,10 +800,13 @@ Setelah membuat hasil:
             <tr><td class="px-4 py-3.5"><span class="px-2 py-0.5 rounded-full bg-skysoft text-navy text-[11px] font-bold">Hari 1</span></td><td class="px-4 py-3.5 text-muted">10.00–10.45</td><td class="px-4 py-3.5 font-semibold">PTCFC</td><td class="px-4 py-3.5 text-muted">TP 2</td><td class="px-4 py-3.5 text-muted">Persona, Task, Context, Format, Constraints.</td><td class="px-4 py-3.5 text-muted">Demonstrasi dan latihan.</td><td class="px-4 py-3.5 text-muted">Prompt</td></tr>
             <tr><td class="px-4 py-3.5"><span class="px-2 py-0.5 rounded-full bg-skysoft text-navy text-[11px] font-bold">Hari 1</span></td><td class="px-4 py-3.5 text-muted">11.00–12.15</td><td class="px-4 py-3.5 font-semibold">Outline</td><td class="px-4 py-3.5 text-muted">TP 2–4</td><td class="px-4 py-3.5 text-muted">Judul, lead, isi, siaran pers, FAQ.</td><td class="px-4 py-3.5 text-muted">Latihan dan pemeriksaan.</td><td class="px-4 py-3.5 text-muted">Outline</td></tr>
             <tr><td class="px-4 py-3.5"><span class="px-2 py-0.5 rounded-full bg-skysoft text-navy text-[11px] font-bold">Hari 1</span></td><td class="px-4 py-3.5 text-muted">13.00–14.30</td><td class="px-4 py-3.5 font-semibold">Draf dan Pemeriksaan</td><td class="px-4 py-3.5 text-muted">TP 4–5</td><td class="px-4 py-3.5 text-muted">Berita, siaran pers, FAQ, penyuntingan, pemeriksaan fakta.</td><td class="px-4 py-3.5 text-muted">Praktik AI, penyuntingan, pemeriksaan.</td><td class="px-4 py-3.5 text-muted">Draf + catatan pemeriksaan</td></tr>
-            <tr><td class="px-4 py-3.5"><span class="px-2 py-0.5 rounded-full bg-mintsoft text-[#2F6F68] text-[11px] font-bold">Hari 2</span></td><td class="px-4 py-3.5 text-muted">09.00–10.00</td><td class="px-4 py-3.5 font-semibold">Pilar dan Kalender Konten</td><td class="px-4 py-3.5 text-muted">TP 7</td><td class="px-4 py-3.5 text-muted">Tujuan akun, audiens, pilar, kalender.</td><td class="px-4 py-3.5 text-muted">Kerja kelompok dan diskusi.</td><td class="px-4 py-3.5 text-muted">Kalender 14 hari</td></tr>
-            <tr><td class="px-4 py-3.5"><span class="px-2 py-0.5 rounded-full bg-mintsoft text-[#2F6F68] text-[11px] font-bold">Hari 2</span></td><td class="px-4 py-3.5 text-muted">10.00–12.15</td><td class="px-4 py-3.5 font-semibold">Konten Media Sosial</td><td class="px-4 py-3.5 text-muted">TP 8</td><td class="px-4 py-3.5 text-muted">Hook, caption, CTA, visual, lintas kanal.</td><td class="px-4 py-3.5 text-muted">Demonstrasi, praktik, pemeriksaan.</td><td class="px-4 py-3.5 text-muted">Paket konten</td></tr>
-            <tr><td class="px-4 py-3.5"><span class="px-2 py-0.5 rounded-full bg-mintsoft text-[#2F6F68] text-[11px] font-bold">Hari 2</span></td><td class="px-4 py-3.5 text-muted">13.00–14.30</td><td class="px-4 py-3.5 font-semibold">Komentar, Data, dan Proyek Akhir</td><td class="px-4 py-3.5 text-muted">TP 9–11</td><td class="px-4 py-3.5 text-muted">Komentar, respons, penerusan, data, rekomendasi.</td><td class="px-4 py-3.5 text-muted">Simulasi, latihan data, workshop.</td><td class="px-4 py-3.5 text-muted">Proyek akhir</td></tr>
-            <tr><td class="px-4 py-3.5"><span class="px-2 py-0.5 rounded-full bg-mintsoft text-[#2F6F68] text-[11px] font-bold">Hari 2</span></td><td class="px-4 py-3.5 text-muted">14.45–15.00</td><td class="px-4 py-3.5 font-semibold">Post-Test dan Penutupan</td><td class="px-4 py-3.5 text-muted">TP 11</td><td class="px-4 py-3.5 text-muted">Post-test, refleksi, rencana penerapan.</td><td class="px-4 py-3.5 text-muted">Tes dan refleksi.</td><td class="px-4 py-3.5 text-muted">Nilai + rencana penerapan</td></tr>
+            <tr><td class="px-4 py-3.5"><span class="px-2 py-0.5 rounded-full bg-mintsoft text-navydeep text-[11px] font-bold">Hari 2</span></td><td class="px-4 py-3.5 text-muted">09.00–09.10</td><td class="px-4 py-3.5 font-semibold">Retrieval opener</td><td class="px-4 py-3.5 text-muted">TP 1–5</td><td class="px-4 py-3.5 text-muted">Tulis ulang prompt; deteksi kesalahan fakta tanam.</td><td class="px-4 py-3.5 text-muted">Latihan cepat.</td><td class="px-4 py-3.5 text-muted">Baseline transfer</td></tr>
+            <tr><td class="px-4 py-3.5"><span class="px-2 py-0.5 rounded-full bg-mintsoft text-navydeep text-[11px] font-bold">Hari 2</span></td><td class="px-4 py-3.5 text-muted">09.10–10.00</td><td class="px-4 py-3.5 font-semibold">Pilar dan Kalender Konten</td><td class="px-4 py-3.5 text-muted">TP 7</td><td class="px-4 py-3.5 text-muted">Tujuan akun, audiens, pilar, kalender.</td><td class="px-4 py-3.5 text-muted">Kerja kelompok dan diskusi.</td><td class="px-4 py-3.5 text-muted">Kalender 14 hari</td></tr>
+            <tr><td class="px-4 py-3.5"><span class="px-2 py-0.5 rounded-full bg-mintsoft text-navydeep text-[11px] font-bold">Hari 2</span></td><td class="px-4 py-3.5 text-muted">10.00–10.45</td><td class="px-4 py-3.5 font-semibold">Hook, Caption, CTA</td><td class="px-4 py-3.5 text-muted">TP 8</td><td class="px-4 py-3.5 text-muted">3 hook, caption, CTA.</td><td class="px-4 py-3.5 text-muted">Demonstrasi, praktik cepat.</td><td class="px-4 py-3.5 text-muted">Paket teks sosial</td></tr>
+            <tr><td class="px-4 py-3.5"><span class="px-2 py-0.5 rounded-full bg-mintsoft text-navydeep text-[11px] font-bold">Hari 2</span></td><td class="px-4 py-3.5 text-muted">11.00–12.00</td><td class="px-4 py-3.5 font-semibold">Visual &amp; Lintas Kanal</td><td class="px-4 py-3.5 text-muted">TP 6, 8</td><td class="px-4 py-3.5 text-muted">Arahan visual; adaptasi 3 kanal; konsistensi pesan.</td><td class="px-4 py-3.5 text-muted">Praktik, peer check.</td><td class="px-4 py-3.5 text-muted">Paket lintas kanal</td></tr>
+            <tr><td class="px-4 py-3.5"><span class="px-2 py-0.5 rounded-full bg-mintsoft text-navydeep text-[11px] font-bold">Hari 2</span></td><td class="px-4 py-3.5 text-muted">13.00–13.45</td><td class="px-4 py-3.5 font-semibold">Komentar dan Respons</td><td class="px-4 py-3.5 text-muted">TP 9</td><td class="px-4 py-3.5 text-muted">Kategori komentar, respons, penerusan.</td><td class="px-4 py-3.5 text-muted">Simulasi, role-play.</td><td class="px-4 py-3.5 text-muted">Matriks komentar</td></tr>
+            <tr><td class="px-4 py-3.5"><span class="px-2 py-0.5 rounded-full bg-mintsoft text-navydeep text-[11px] font-bold">Hari 2</span></td><td class="px-4 py-3.5 text-muted">13.45–14.15</td><td class="px-4 py-3.5 font-semibold">Data Kinerja</td><td class="px-4 py-3.5 text-muted">TP 10</td><td class="px-4 py-3.5 text-muted">Baca data; ≥2 rekomendasi berbasis angka.</td><td class="px-4 py-3.5 text-muted">Latihan data.</td><td class="px-4 py-3.5 text-muted">Rekomendasi</td></tr>
+            <tr><td class="px-4 py-3.5"><span class="px-2 py-0.5 rounded-full bg-mintsoft text-navydeep text-[11px] font-bold">Hari 2</span></td><td class="px-4 py-3.5 text-muted">14.15–15.00</td><td class="px-4 py-3.5 font-semibold">Klinik Proyek + Post-Test</td><td class="px-4 py-3.5 text-muted">TP 11</td><td class="px-4 py-3.5 text-muted">Draft proyek; post-test; rencana penerapan. Final H+7.</td><td class="px-4 py-3.5 text-muted">Klinik, tes, refleksi.</td><td class="px-4 py-3.5 text-muted">Draft + nilai</td></tr>
           </tbody>
         </table>
       </div>
@@ -829,7 +841,7 @@ Setelah membuat hasil:
         </article>
       </div>
 
-      <div class="rounded-2xl border-l-4 border-[#3B8F86] bg-mintsoft p-5 mb-6 print-block">
+      <div class="rounded-2xl border-l-4 border-[#0E86C4] bg-mintsoft p-5 mb-6 print-block">
         <div class="font-bold text-navydeep mb-1"><i class="fa-solid fa-circle-check mr-2"></i>Batas kelulusan</div>
         <p class="text-muted text-sm">Nilai akhir minimal 75/100. Peserta juga harus menunjukkan kemampuan memeriksa informasi sebelum menggunakan hasil AI.</p>
       </div>
@@ -854,43 +866,86 @@ Setelah membuat hasil:
           </tbody>
         </table>
       </div>
+
+      <h3 class="text-lg font-bold text-navydeep mt-8 mb-3">Skala 4-tier Struktur Tulisan (TP 4)</h3>
+      <div class="overflow-x-auto rounded-card border border-line bg-white shadow-card print-block">
+        <table class="doc w-full text-[13px] min-w-[720px]">
+          <thead>
+            <tr class="bg-navy text-white text-left">
+              <th class="px-4 py-3.5 font-semibold">Tingkat</th>
+              <th class="px-4 py-3.5 font-semibold">Definisi operasional</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-line">
+            <tr><td class="px-4 py-3.5 font-bold text-navy">4</td><td class="px-4 py-3.5 text-muted">Struktur lengkap &amp; benar per jenis tulisan; judul–lead–isi–penutup siap sunting minim; nol fakta karangan.</td></tr>
+            <tr><td class="px-4 py-3.5 font-bold text-navy">3</td><td class="px-4 py-3.5 text-muted">Struktur sesuai jenis tulisan; 1–2 bagian perlu perbaikan ringan; nol fakta karangan material.</td></tr>
+            <tr><td class="px-4 py-3.5 font-bold text-navy">2</td><td class="px-4 py-3.5 text-muted">Struktur sebagian; beberapa bagian salah jenis atau bolong; masih ada klaim tanpa sumber.</td></tr>
+            <tr><td class="px-4 py-3.5 font-bold text-navy">1</td><td class="px-4 py-3.5 text-muted">Struktur tidak sesuai jenis tulisan; harus disusun ulang.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-sm text-muted mt-2 print-block">Ambang TP 4: <strong class="text-ink">tingkat 3</strong> ke atas. Instrumen pre-test, post-test, checklist PTCFC, dan set komentar ada di halaman <a href="#unduhan" class="text-navy font-semibold underline">Unduhan</a>.</p>
     </section>
 
     <!-- 11 Proyek -->
     <section id="proyek" class="scroll-mt-24 mb-16">
       <div class="text-navy text-[11px] font-extrabold uppercase tracking-[1.5px] mb-2">11 · Proyek Akhir</div>
       <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-navydeep mb-3">Proyek Akhir — Paket Komunikasi</h2>
-      <p class="text-muted max-w-3xl mb-6 leading-relaxed">Peserta menggabungkan keterampilan dari dua hari pelatihan ke dalam satu kasus komunikasi Humas.</p>
+      <p class="text-muted max-w-3xl mb-6 leading-relaxed">Peserta menggabungkan keterampilan dari dua hari pelatihan ke dalam satu kasus komunikasi Humas. Draft diklinikkan di sesi 8A; <strong class="text-ink">artefak final jatuh tempo H+7</strong>.</p>
+
+      <div class="rounded-2xl border-l-4 border-gold bg-goldsoft p-5 mb-6 print-block">
+        <div class="font-bold text-navydeep mb-2"><i class="fa-solid fa-scale-balanced text-gold mr-2"></i>Bobot komponen proyek (100 poin)</div>
+        <p class="text-sm text-muted mb-3">Ambang kelulusan TP 11: total <strong class="text-ink">≥75/100</strong> <em>dan</em> nol kesalahan fakta kritis yang dibiarkan. Rincian penilai: unduh addendum rubrik.</p>
+        <div class="overflow-x-auto">
+          <table class="doc w-full text-[13px] min-w-[640px] bg-white rounded-xl border border-line">
+            <thead>
+              <tr class="bg-navy text-white text-left">
+                <th class="px-3 py-2.5 font-semibold">Komponen</th>
+                <th class="px-3 py-2.5 font-semibold">Bobot</th>
+                <th class="px-3 py-2.5 font-semibold">TP</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-line">
+              <tr><td class="px-3 py-2.5">Siaran pers 350–500 kata + ≥2 judul</td><td class="px-3 py-2.5 font-bold text-navy">30</td><td class="px-3 py-2.5 text-muted">4–5</td></tr>
+              <tr><td class="px-3 py-2.5">4–5 pilar + kalender 14 hari</td><td class="px-3 py-2.5 font-bold text-navy">15</td><td class="px-3 py-2.5 text-muted">7</td></tr>
+              <tr><td class="px-3 py-2.5">Paket sosial (3 hook · caption · CTA · arahan visual)</td><td class="px-3 py-2.5 font-bold text-navy">20</td><td class="px-3 py-2.5 text-muted">8</td></tr>
+              <tr><td class="px-3 py-2.5">Respons komentar ≥10 contoh</td><td class="px-3 py-2.5 font-bold text-navy">15</td><td class="px-3 py-2.5 text-muted">9</td></tr>
+              <tr><td class="px-3 py-2.5">Log pemeriksaan fakta</td><td class="px-3 py-2.5 font-bold text-navy">10</td><td class="px-3 py-2.5 text-muted">5</td></tr>
+              <tr><td class="px-3 py-2.5">≥2 rekomendasi berbasis data</td><td class="px-3 py-2.5 font-bold text-navy">10</td><td class="px-3 py-2.5 text-muted">10</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
 
       <div class="grid grid-cols-12 gap-4">
         <article class="col-span-12 md:col-span-6 xl:col-span-4 print-block bg-white border border-line rounded-card shadow-card p-6">
           <div class="w-10 h-10 rounded-xl bg-navy text-white font-extrabold flex items-center justify-center mb-4">01</div>
-          <h3 class="font-bold text-navydeep mb-2">Siaran Pers</h3>
+          <h3 class="font-bold text-navydeep mb-2">Siaran Pers <span class="text-xs font-bold text-gold">· 30 poin</span></h3>
           <p class="text-sm text-muted">Draf 350–500 kata, pilihan judul, dan catatan pemeriksaan fakta.</p>
         </article>
         <article class="col-span-12 md:col-span-6 xl:col-span-4 print-block bg-white border border-line rounded-card shadow-card p-6">
           <div class="w-10 h-10 rounded-xl bg-navy text-white font-extrabold flex items-center justify-center mb-4">02</div>
-          <h3 class="font-bold text-navydeep mb-2">Pilar Konten</h3>
+          <h3 class="font-bold text-navydeep mb-2">Pilar Konten <span class="text-xs font-bold text-gold">· 15 poin</span></h3>
           <p class="text-sm text-muted">4–5 pilar konten dan kalender konten selama 14 hari.</p>
         </article>
         <article class="col-span-12 md:col-span-6 xl:col-span-4 print-block bg-white border border-line rounded-card shadow-card p-6">
           <div class="w-10 h-10 rounded-xl bg-navy text-white font-extrabold flex items-center justify-center mb-4">03</div>
-          <h3 class="font-bold text-navydeep mb-2">Konten Media Sosial</h3>
+          <h3 class="font-bold text-navydeep mb-2">Konten Media Sosial <span class="text-xs font-bold text-gold">· 20 poin</span></h3>
           <p class="text-sm text-muted">Hook, caption, CTA, dan arahan visual.</p>
         </article>
         <article class="col-span-12 md:col-span-6 xl:col-span-4 print-block bg-skysoft border border-sky/40 rounded-card shadow-card p-6">
           <div class="w-10 h-10 rounded-xl bg-navy text-white font-extrabold flex items-center justify-center mb-4">04</div>
-          <h3 class="font-bold text-navydeep mb-2">Respons Komentar</h3>
+          <h3 class="font-bold text-navydeep mb-2">Respons Komentar <span class="text-xs font-bold text-gold">· 15 poin</span></h3>
           <p class="text-sm text-muted">Minimal 10 contoh komentar, klasifikasi, respons, dan keputusan apakah perlu diteruskan.</p>
         </article>
         <article class="col-span-12 md:col-span-6 xl:col-span-4 print-block bg-mintsoft border border-mint rounded-card shadow-card p-6">
           <div class="w-10 h-10 rounded-xl bg-navy text-white font-extrabold flex items-center justify-center mb-4">05</div>
-          <h3 class="font-bold text-navydeep mb-2">Pemeriksaan Hasil</h3>
+          <h3 class="font-bold text-navydeep mb-2">Pemeriksaan Hasil <span class="text-xs font-bold text-gold">· 10 poin</span></h3>
           <p class="text-sm text-muted">Catatan sumber, informasi yang belum pasti, dan perbaikan yang dilakukan.</p>
         </article>
         <article class="col-span-12 md:col-span-6 xl:col-span-4 print-block bg-goldsoft border border-gold/40 rounded-card shadow-card p-6">
           <div class="w-10 h-10 rounded-xl bg-navy text-white font-extrabold flex items-center justify-center mb-4">06</div>
-          <h3 class="font-bold text-navydeep mb-2">Rekomendasi</h3>
+          <h3 class="font-bold text-navydeep mb-2">Rekomendasi <span class="text-xs font-bold text-gold">· 10 poin</span></h3>
           <p class="text-sm text-muted">Minimal dua rekomendasi berdasarkan data kinerja konten.</p>
         </article>
       </div>
@@ -941,7 +996,7 @@ Setelah membuat hasil:
         <article class="col-span-12 lg:col-span-6 print-block bg-mintsoft border border-mint rounded-card shadow-card p-6">
           <div class="w-10 h-10 rounded-xl bg-navy text-white font-extrabold flex items-center justify-center mb-4">3</div>
           <h3 class="text-lg font-bold text-navydeep">Perilaku</h3>
-          <span class="inline-block mt-2 px-2.5 py-1 rounded-full bg-white text-[#2F6F68] text-[11px] font-bold">Apakah digunakan di tempat kerja?</span>
+          <span class="inline-block mt-2 px-2.5 py-1 rounded-full bg-white text-navydeep text-[11px] font-bold">Apakah digunakan di tempat kerja?</span>
           <p class="text-sm text-muted mt-3">Mengukur apakah peserta menggunakan keterampilan yang dipelajari setelah kembali bekerja.</p>
           <p class="font-bold text-ink mt-4 mb-2 text-sm">Yang diamati:</p>
           <ul class="space-y-1.5 text-sm text-muted mb-4">
@@ -958,7 +1013,7 @@ Setelah membuat hasil:
         <article class="col-span-12 lg:col-span-6 print-block bg-goldsoft border border-gold/40 rounded-card shadow-card p-6">
           <div class="w-10 h-10 rounded-xl bg-navy text-white font-extrabold flex items-center justify-center mb-4">4</div>
           <h3 class="text-lg font-bold text-navydeep">Hasil</h3>
-          <span class="inline-block mt-2 px-2.5 py-1 rounded-full bg-white text-[#8A6820] text-[11px] font-bold">Apa manfaatnya bagi pekerjaan?</span>
+          <span class="inline-block mt-2 px-2.5 py-1 rounded-full bg-white text-[#9A7212] text-[11px] font-bold">Apa manfaatnya bagi pekerjaan?</span>
           <p class="text-sm text-muted mt-3">Mengukur perubahan yang terlihat pada pekerjaan Humas.</p>
           <p class="font-bold text-ink mt-4 mb-2 text-sm">Contoh yang dapat diukur:</p>
           <ul class="space-y-1.5 text-sm text-muted">
@@ -1020,6 +1075,25 @@ Setelah membuat hasil:
           <h3 class="font-bold text-navydeep mb-2"><i class="fa-solid fa-calendar-check text-gold mr-2"></i>Tindak Lanjut 2–4 Minggu</h3>
           <p class="text-sm text-muted leading-relaxed">Koordinator Humas dapat mengambil beberapa contoh pekerjaan nyata setelah pelatihan dan memeriksanya menggunakan rubrik yang sama. Hasilnya digunakan untuk menentukan apakah perlu memperbaiki template, cara kerja, atau aturan pemeriksaan sebelum publikasi.</p>
         </article>
+        <article class="col-span-12 print-block bg-white border border-line rounded-card shadow-card p-6">
+          <h3 class="text-lg font-bold text-navydeep mb-3"><i class="fa-solid fa-bolt text-navy mr-2"></i>Booster 3 · 7 · 21 Hari</h3>
+          <div class="overflow-x-auto">
+            <table class="doc w-full text-[13px] min-w-[560px]">
+              <thead>
+                <tr class="bg-navy text-white text-left">
+                  <th class="px-3 py-2.5 font-semibold">H+</th>
+                  <th class="px-3 py-2.5 font-semibold">Kegiatan</th>
+                  <th class="px-3 py-2.5 font-semibold">Durasi</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-line">
+                <tr><td class="px-3 py-2.5 font-bold text-navy">3</td><td class="px-3 py-2.5 text-muted">Klinik prompt: kirim 1 prompt PTCFC + 1 feedback peer (grup WA/email)</td><td class="px-3 py-2.5 text-muted">15 m asinkron</td></tr>
+                <tr><td class="px-3 py-2.5 font-bold text-navy">7</td><td class="px-3 py-2.5 text-muted">Deadline proyek akhir + drill 5 komentar</td><td class="px-3 py-2.5 text-muted">Submit + 15 m</td></tr>
+                <tr><td class="px-3 py-2.5 font-bold text-navy">21</td><td class="px-3 py-2.5 text-muted">Audit 1 kalender konten milik peserta (3 perbaikan)</td><td class="px-3 py-2.5 text-muted">15 m + tinjauan koordinator</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -1034,7 +1108,7 @@ Setelah membuat hasil:
           <ul class="space-y-2 text-sm text-muted">
             <li class="flex gap-2"><i class="fa-solid fa-laptop text-mint mt-0.5"></i>Laptop.</li>
             <li class="flex gap-2"><i class="fa-solid fa-wifi text-mint mt-0.5"></i>Koneksi internet.</li>
-            <li class="flex gap-2"><i class="fa-solid fa-robot text-mint mt-0.5"></i>Akun AI yang digunakan dalam pelatihan.</li>
+            <li class="flex gap-2"><i class="fa-solid fa-robot text-mint mt-0.5"></i>Akun AI yang digunakan dalam pelatihan — <strong class="text-ink">alat disepakati bersama sebelum hari-H</strong> (mis. ChatGPT/Gemini/Claude yang diizinkan lembaga). Pastikan sudah login 15 menit sebelum mulai.</li>
             <li class="flex gap-2"><i class="fa-solid fa-file-lines text-mint mt-0.5"></i>Satu bahan komunikasi yang boleh digunakan untuk latihan.</li>
             <li class="flex gap-2"><i class="fa-solid fa-pen text-mint mt-0.5"></i>Alat tulis.</li>
           </ul>
@@ -1055,6 +1129,67 @@ Setelah membuat hasil:
         <article class="col-span-12 print-block bg-goldsoft border border-gold/40 rounded-card shadow-card p-6">
           <h3 class="text-lg font-bold text-navydeep mb-2"><i class="fa-solid fa-shield-halved text-gold mr-2"></i>Penggunaan Data</h3>
           <p class="text-sm text-muted leading-relaxed">Jangan memasukkan data pribadi peserta didik, keluarga, nomor kontak pribadi, dokumen rahasia, atau informasi internal yang tidak boleh dibagikan ke dalam alat AI. Gunakan bahan yang sudah dianonimkan atau bahan latihan yang disediakan fasilitator.</p>
+        </article>
+        <article class="col-span-12 print-block bg-skysoft border border-sky/40 rounded-card shadow-card p-6">
+          <h3 class="text-lg font-bold text-navydeep mb-2"><i class="fa-solid fa-circle-info text-navy mr-2"></i>[ASUMSI] Operasional</h3>
+          <ul class="space-y-2 text-sm text-muted">
+            <li class="flex gap-2"><i class="fa-solid fa-check text-mint mt-0.5"></i><strong class="text-ink">Alat AI:</strong> satu platform yang disepakati panitia — konfirmasi H-3 ke peserta.</li>
+            <li class="flex gap-2"><i class="fa-solid fa-check text-mint mt-0.5"></i><strong class="text-ink">Ukuran kelas:</strong> ideal 20–30 peserta; kelompok praktik 3–4 orang.</li>
+            <li class="flex gap-2"><i class="fa-solid fa-check text-mint mt-0.5"></i><strong class="text-ink">Perangkat:</strong> ≥1 laptop per 1–2 peserta + internet stabil.</li>
+            <li class="flex gap-2"><i class="fa-solid fa-check text-mint mt-0.5"></i><strong class="text-ink">Proyek akhir:</strong> final H+7; penalti keterlambatan mengikuti kebijakan penyelenggara.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- 15 Unduhan -->
+    <section id="unduhan" class="scroll-mt-24 mb-16">
+      <div class="text-navy text-[11px] font-extrabold uppercase tracking-[1.5px] mb-2">15 · Unduhan</div>
+      <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-navydeep mb-3">Dokumen Pendamping</h2>
+      <p class="text-muted max-w-3xl mb-6 leading-relaxed">Berkas terpisah untuk fasilitator, penilai, dan peserta. Buka atau unduh — siap dipakai tanpa menunggu dokumen lain.</p>
+
+      <div class="grid grid-cols-12 gap-4">
+        <article class="col-span-12 md:col-span-6 print-block bg-white border border-line rounded-card shadow-card p-5">
+          <div class="text-xs font-bold uppercase tracking-wide text-navy mb-1">Fasilitator · Hari 1</div>
+          <h3 class="font-bold text-navydeep mb-1">Panduan Fasilitator Hari 1</h3>
+          <p class="text-sm text-muted mb-3">Skrip verbatim menit-demi-menit: brief, PTCFC, outline, draf + fact-check.</p>
+          <a href="dokumen/panduan-fasilitator-hari1.md" download class="inline-flex items-center gap-2 rounded-xl bg-navy hover:bg-navydeep text-white text-sm font-semibold px-4 py-2 transition"><i class="fa-solid fa-download"></i> Unduh .md</a>
+        </article>
+        <article class="col-span-12 md:col-span-6 print-block bg-white border border-line rounded-card shadow-card p-5">
+          <div class="text-xs font-bold uppercase tracking-wide text-navy mb-1">Fasilitator · Hari 2</div>
+          <h3 class="font-bold text-navydeep mb-1">Panduan Fasilitator Hari 2</h3>
+          <p class="text-sm text-muted mb-3">Jadwal baru + retrieval opener, S7a/b terpisah, klinik proyek, booster.</p>
+          <a href="dokumen/panduan-fasilitator-hari2.md" download class="inline-flex items-center gap-2 rounded-xl bg-navy hover:bg-navydeep text-white text-sm font-semibold px-4 py-2 transition"><i class="fa-solid fa-download"></i> Unduh .md</a>
+        </article>
+        <article class="col-span-12 md:col-span-6 print-block bg-skysoft border border-sky/40 rounded-card shadow-card p-5">
+          <div class="text-xs font-bold uppercase tracking-wide text-navy mb-1">Penilaian</div>
+          <h3 class="font-bold text-navydeep mb-1">Bank Instrumen</h3>
+          <p class="text-sm text-muted mb-3">Pre-test, post-test, checklist PTCFC, brief, log fakta, 12 komentar + kunci, kuesioner L1.</p>
+          <a href="dokumen/bank-instrumen.md" download class="inline-flex items-center gap-2 rounded-xl bg-navy hover:bg-navydeep text-white text-sm font-semibold px-4 py-2 transition"><i class="fa-solid fa-download"></i> Unduh .md</a>
+        </article>
+        <article class="col-span-12 md:col-span-6 print-block bg-mintsoft border border-mint rounded-card shadow-card p-5">
+          <div class="text-xs font-bold uppercase tracking-wide text-navy mb-1">Proyek Akhir</div>
+          <h3 class="font-bold text-navydeep mb-1">Addendum Rubrik Proyek</h3>
+          <p class="text-sm text-muted mb-3">Bobot 6 komponen (100 poin) + indikator skor + lembar penilai.</p>
+          <a href="dokumen/addendum-rubrik-proyek.md" download class="inline-flex items-center gap-2 rounded-xl bg-navy hover:bg-navydeep text-white text-sm font-semibold px-4 py-2 transition"><i class="fa-solid fa-download"></i> Unduh .md</a>
+        </article>
+        <article class="col-span-12 md:col-span-6 print-block bg-white border border-line rounded-card shadow-card p-5">
+          <div class="text-xs font-bold uppercase tracking-wide text-navy mb-1">SOP kerja</div>
+          <h3 class="font-bold text-navydeep mb-1">SOP Persetujuan Konten AI</h3>
+          <p class="text-sm text-muted mb-3">Peta peninjau, SLA, decision tree, checklist sebelum tayang.</p>
+          <a href="dokumen/sop-persetujuan-konten.md" download class="inline-flex items-center gap-2 rounded-xl bg-navy hover:bg-navydeep text-white text-sm font-semibold px-4 py-2 transition"><i class="fa-solid fa-download"></i> Unduh .md</a>
+        </article>
+        <article class="col-span-12 md:col-span-6 print-block bg-white border border-line rounded-card shadow-card p-5">
+          <div class="text-xs font-bold uppercase tracking-wide text-navy mb-1">Evaluasi L3</div>
+          <h3 class="font-bold text-navydeep mb-1">Checklist Observasi Penerapan</h3>
+          <p class="text-sm text-muted mb-3">12 butir perilaku 2–4 minggu setelah pelatihan — untuk Koordinator Humas.</p>
+          <a href="dokumen/checklist-observasi-l3.md" download class="inline-flex items-center gap-2 rounded-xl bg-navy hover:bg-navydeep text-white text-sm font-semibold px-4 py-2 transition"><i class="fa-solid fa-download"></i> Unduh .md</a>
+        </article>
+        <article class="col-span-12 md:col-span-6 print-block bg-white border border-line rounded-card shadow-card p-5">
+          <div class="text-xs font-bold uppercase tracking-wide text-navy mb-1">Template</div>
+          <h3 class="font-bold text-navydeep mb-1">template-ptcfc.txt</h3>
+          <p class="text-sm text-muted mb-3">Template prompt siap salin (Persona · Task · Context · Format · Constraints).</p>
+          <a href="dokumen/template-ptcfc.txt" download class="inline-flex items-center gap-2 rounded-xl bg-navy hover:bg-navydeep text-white text-sm font-semibold px-4 py-2 transition"><i class="fa-solid fa-download"></i> Unduh .txt</a>
         </article>
       </div>
     </section>
@@ -1107,10 +1242,6 @@ Setelah membuat hasil:
   navLinks.forEach(link => link.addEventListener('click', () => {
     if (window.innerWidth < 1024) closeMenu();
   }));
-
-  function doPrint() { window.print(); }
-  document.getElementById('printBtn')?.addEventListener('click', doPrint);
-  document.getElementById('printBtnMobile')?.addEventListener('click', doPrint);
 
   // Scroll progress + back to top
   window.addEventListener('scroll', () => {
